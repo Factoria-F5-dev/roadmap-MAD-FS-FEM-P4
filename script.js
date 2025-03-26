@@ -1,12 +1,12 @@
 
 // Data
 const bootcampData = {
-    title: "Desarrollo web full stack + intro a DevOps",
+    title: "Desarrollo Full Stack + intro a DevOps",
     weeks: 24,
     modules: [
         { name: "Intro + Front", start: 1, end: 10 },
         { name: "Back", start: 11, end: 16 },
-        { name: "fullstack", start: 17, end: 19 },
+        { name: "Fullstack", start: 17, end: 19 },
         { name: "Proyecto final", start: 20, end: 24 },
     ],
     stack: [
@@ -140,12 +140,6 @@ const bootcampData = {
             end: 24,
         },
         {
-            type: "Competencia",
-            name: "DevOps:Automatización de procesos",
-            start: 17,
-            end: 24,
-        },
-        {
             type: "Proyecto",
             name: "Proyecto final | <i class='bi bi-people-fill'></i>",
             start: 20,
@@ -164,6 +158,20 @@ const bootcampData = {
        {
          name: "Prototipado web",
         metric: ["Desarrollo del Diseño de producto"],
+        indicator: {
+            typeBasic: [
+                "Uso de la herramienta de diseño Figma",
+                "Uso de wireframes",
+                "Uso de diseño responsivo",
+                "Uso de prototipado de alta fidelidad",
+            ],
+            typeExtra: [
+                "Uso de diseño de experiencia de usuario (UX)",
+                "Uso de diseño de interfaz de usuario (UI)",
+                "Uso de diseño de interacción",
+            ],
+                           
+        },
         themes: {
             typeBasic: [
                 "Introduccion al diseño y prototipado web con Figma",
@@ -181,7 +189,23 @@ const bootcampData = {
         },
         {
             name: "Maquetación y Diseño web",
-
+            indicator: {
+                typeBasic: [
+                    "Uso de HTML",
+                    "Uso de etiquetas semánticas",
+                    "Uso de CSS",
+                    "Uso de Flexbox",
+                    "Uso de Grid",
+                    "Uso de Media queries",
+                    "Uso de Diseño responsive",
+                    
+                ],
+                typeExtra: [
+                    "Uso de Preprocesadores",
+                    "Uso de Tailwind",
+                    "Uso de Diseño web accesible",
+                ],
+            },
             themes: {
                 typeBasic: [
                     "introducción a maquetación web: HTML semántico",
@@ -198,46 +222,81 @@ const bootcampData = {
         },
         {
             name: "Control de versiones",
-            themes: {
+            indicator: {
                 typeBasic: [
-                    "Git bash",
-                    "Github",
-                    "commits, ramas, merges, pull requests",
-                    "Resolución de conflictos",
-                    "Issues y proyectos"
-,
+                    "Uso de git",
+                    "Uso de github",
+                    "Uso de gitflow",
+                    "Uso de commits descriptivos",
+                    "Uso de ramas",
+                    "Uso de nomenclatura en commits",
+                    "Uso de nomenclatura en ramas",
                 ],
                 typeExtra: [
-                    "git flow",
-                    "conventional commits",
+                    "Uso de conventional commits",
+                    "Uso de issues y pull requests",
+                    "Uso de etiquetas",
                 ]
-            }
-
+            },
         },
         {
             name: ["Bases de programación"],
+            indicator: {
+                typeBasic: [
+                    "Deteccion de tipos de datos",
+                    "Uso palabras reservadas",
+                    "Uso de operadores",
+                    "Uso de controladores de flujo",
+                    "Uso de estructuras de datos",
+                    "Uso de la consola",
+                    "Uso de Funciones",
+                    "Uso del formato JSON",
+                   // "Manejo de errores (cláusula try/except)",
+                    "Uso de POO (Programación Orientada a Objetos)",
+                
+                ],
+                typeExtra: [
+                    "Uso de los principios de programación y convenciones",
+                    "Uso de librerías externas",
+                    "Documentación de código",
+                ]
+            },
             themes: {
                 typeBasic: [
                     "Introducción a JavaScript (tipos de datos, variables, operadores, estructuras de control)",
                     "Manipulación del DOM",
                     "Eventos",
                     "Funciones",
-                    "Paradigma funcional",
                     "POO (Programación Orientada a Objetos)",
-                    "Principios SOLID",
                     "Manejo de errores",
                     "Librerías externas",
                 ],
                 typeExtra: [
-                    "ES6+",
-                    "DRY",
-                    "kiss",
-                    "Legacy code",
+                    "Web components",
+                    "Documentación de código",
+                    "Manejo de logs",
                 ]
             }
         },
         {
             name: "Peticiones HTTP",
+            indicator: {
+                typeBasic: [
+                    "Uso de Fetch",
+                    "Uso de Promesas",
+                    "Uso de asincronismo",
+                    "Uso de métodos HTTP",
+                    "Uso de APIs",
+                    "Uso de JSON",
+                    "Uso de variables de entorno",
+                    "Uso de manejo de errores",
+                ],
+                typeExtra: [
+                    "Uso de Axios",
+                    "Uso de cookies",
+                    "Uso de localStorage",
+                ]
+            },
             themes: {
                 typeBasic: [
                     "Fetch y promesas: asincronia en Js",
@@ -254,6 +313,16 @@ const bootcampData = {
         },
         {
             name: "Testing para garantizar la calidad del software",
+            indicator: {
+                typeBasic: [
+                    "Uso de Test Unitarios",
+                    "Uso de Test de Integración",
+                    "Uso de TDD"
+                ],
+                typeExtra: [
+                    "Manejo de la covertura de código",
+                ]
+            },
             themes: {
                 typeBasic: [
                     "Test Unitarios (jest, vitest)",
@@ -268,6 +337,28 @@ const bootcampData = {
         },
         {
             name: "Desarrollo de aplicaciones Frontend",
+            indicator: {
+                typeBasic: [
+                    "Uso de React",
+                    "Uso de una buena estructuración de carpetas",
+                    "Uso de una buena componetización", 
+                    "Uso de props",
+                    "Uso de React Hooks useSatate, useEffect",
+                    "Uso de React Router",
+                    "Uso de Contexto",
+                    "Uso de React Testing Library",
+                    "Uso de apis externas para la gestión de datos",
+                    "Uso de Axios",
+                    "Uso de variables de entorno",
+                ],
+                typeExtra: [
+                    "Uso de Zustand",
+                    "Uso de Next.js",
+                    "Uso de Storybook",
+                    "Uso de TypeScript",
+                    "Uso de una librería de estilos (taildwind, material-ui)",
+                ],
+            },
             themes: {
                 typeBasic: [
                     "Introducción a React",
@@ -289,6 +380,17 @@ const bootcampData = {
         },
         {
             name: "Diseñar y gestionar bases de datos de manera eficiente",
+            indicator: {
+                typeBasic: [
+                    "Uso de Modelado de datos",
+                    "Uso del lenguaje SQL",
+                    "Uso de bases de datos relacionales",
+                ],
+                typeExtra: [
+                    "Uso de bases de datos no relacionales",
+                    "Implementación de técnicas de seguridad en bases de datos",
+                ]
+            },
             themes: {
                 typeBasic: [
                     "Bases de datos relacionales (sql, mysql, postgresql)",
@@ -298,11 +400,31 @@ const bootcampData = {
                 typeExtra: [
                     "Bases de datos no relacionales (mongoDB)",
                     "Seguridad en bases de datos",
+                    "Migración y actualización de bases de datos: Estrategias y mejores prácticas"
                 ]
             }
         },
         {
             name: "Desarrollo de aplicaciones Backend",
+            indicator: {
+                typeBasic: [
+                    "Uso de typeScript",
+                    "Uso de Framework Express",
+                    "Uso de una buena estructuración de carpetas",
+                    "Uso de middlewares",
+                    "Uso de rutas",
+                    "Uso de controladores",
+                    "Uso de servicios",
+                    "Uso de bases de datos",
+                    "Uso de ORM",
+                    "Uso de Validadores",
+                    "Uso de variables de entorno",
+                    "Uso de manejo de errores",
+                    "Uso de Testing",
+                    "Uso de Documentación",
+                ],
+
+                },
             themes: {
                 typeBasic: [
                     "Bases de datos relacionales",
@@ -322,6 +444,26 @@ const bootcampData = {
         },
         {
             name: "Desarrollo Fullstack: Seguridad y Autenticación de Usuarios",
+            indicator: {
+                typeBasic: [
+                    "Uso de una buena estructuración de carpetas",
+                    "Uso de una buena documentacion y naming",
+                    "Uso de encriptación de contraseñas",
+                    "Uso de tokenización",
+                    "Uso de gestión de sesiones",
+                    "Uso de variables de entorno",
+                    "Uso de manejo de errores",
+
+                ],
+                typeExtra: [
+                    "Uso de Zustand",
+                    "Uso de despliegue de aplicaciones",
+                    "Uso de Next.js",
+                    "Uso de Storybook",
+                    "Uso de TypeScript",
+                    "Uso de testing E2E",
+                ],
+            },
             themes: {
                 typeBasic: [
                     "Encriptación y tokenización: bcrypt y JWT",
@@ -343,7 +485,19 @@ const bootcampData = {
         // 
         // 
         {
-            name: "DevOps:Automatización de procesos",
+            name: "DevOps: Automatización de procesos",
+            // indicator: {
+            //     typeBasic: [
+            //         "Uso de Docker",
+            //         "Uso de Docker Compose",
+            //         "Uso de Github Actions CI, CD",
+            //         "Uso de Integración de Docker con Github Actions",
+            //     ],
+            //     typeExtra: [
+            //         "Uso de Implementación de Kafka en microservicios con Docker y Kubernetes",
+            //         "Uso de Optimización de costos y gestión de recursos en la nube",
+            //     ]
+            // },
                 themes: {
                 typeBasic: [
                     "Introducción a docker (contenedores, imágenes, volúmenes, redes)",
@@ -358,7 +512,55 @@ const bootcampData = {
                 ]
             }
         },
+        {
+            name: "Gestionar equipos de forma eficiente",
+            metric: ["Planificación y gestión del proyecto"],
+            indicator: {
+                typeBasic: [
+                    "Uso de roles Definidos",
+                    "Uso de kanban / burndown chart",
+                    "Uso de sprint backlog",
+                    "Uso de herramientas de gestión de proyectos (Trello, Jira, etc.)",
+                    "Uso de estimación de tareas",
+                    "Uso de Actas de reuniones",
+                    "Uso de Daily",
+                    "Uso de Retros",
+                    "Prioriza al equipo",
+                    "Uso de Historias de usuario",
+                    "Uso de Workflow diagram",
+                    "Uso de Documentación (README) o celdas MD en notebook",
+                ],
+                typeExtra: [
+                    "Integración de Gitflow con herramientas de gestión de proyectos (Jira y Trello)",
+                ]
+            },
+            themes: {
+                typeBasic: [
+                    "Metodología Scrum y kanban (roles y ceremonias)",
+                ],
+                typeExtra: [
+                    "Integración de Gitflow con herramientas de gestión de proyectos (Jira y Trello)",
+                    "Herramientas de gestión de proyectos (Trello & Jira), actas de reuniones e historias de usuario",
+                    "Documentación; archivos md (README), Workflow diagram, etc.",
 
+                ]
+            }
+        },
+        {
+            name: "Comunicar efectivamente el desarrollo de un proyecto de forma claras y estructurada",
+            indicator: {
+                typeBasic: [
+                    "Uso de Contenido Visual",
+                    "Uso de Estructura ordenada",
+                    "Uso de estructura Pragmática / Concreta",
+                    "Participación del equipo",
+                    "Uso de Storytelling",
+                ],
+                typeExtra: [
+                    "Uso de herramientas de diseño (Canva, Figma, etc.)",
+                ]
+            }
+        }
         
     ]
 }
@@ -593,6 +795,7 @@ function generateAcordion() {
             </h2>
             <div id="${collapseId}" class="accordion-collapse collapse ${showClass}" aria-labelledby="${headingId}" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+                    <p><strong>Indicadores</strong></p>
                     <ul>
                         ${competency.indicator?.typeBasic?.length > 0 ? `
                         <li>
