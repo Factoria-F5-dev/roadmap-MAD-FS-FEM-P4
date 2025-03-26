@@ -4,7 +4,7 @@ Este repositorio contiene la visión general del Bootcamp
 
 ## 🎯 Infografía de Competencias
 
-![Infografía de Competencias](./img/info.png)
+![Infografía de Competencias](./img/escalera_desarrollo_intro_devops_escritorio.svg)
 
 - Esta infografía, generada con IA, proporciona una visión general de las competencias 
 
