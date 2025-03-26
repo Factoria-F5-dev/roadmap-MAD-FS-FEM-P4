@@ -795,7 +795,7 @@ function generateAcordion() {
             </h2>
             <div id="${collapseId}" class="accordion-collapse collapse ${showClass}" aria-labelledby="${headingId}" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <p><strong>Indicadores</strong></p>
+                    <!--p><strong>Indicadores</strong></p>
                     <ul>
                         ${competency.indicator?.typeBasic?.length > 0 ? `
                         <li>
@@ -813,7 +813,7 @@ function generateAcordion() {
                             </ul>
                         </li>
                         ` : ''}
-                    </ul>
+                    </ul-->
                     ${competency.themes?.typeBasic?.length > 0 ? `<p><strong>Temas</strong></p>` : ''}
                     <ul>
                         ${competency.themes?.typeBasic?.length > 0 ? `
