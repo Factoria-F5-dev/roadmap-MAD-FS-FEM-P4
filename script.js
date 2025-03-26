@@ -67,7 +67,7 @@ const bootcampData = {
         },
         {
             type: "Proyecto",
-            name: "CRUD Js vanila | <i class='bi bi-person-fill'></i>",
+            name: "CRUD JS vanila | <i class='bi bi-person-fill'></i>",
             start: 6,
             end: 7,
         },
@@ -94,9 +94,7 @@ const bootcampData = {
             name: "Testing: Frontend",
             start: 9,
             end: 24,
-
         },
-
         {
             type: "Proyecto",
             name: "API Express | <i class='bi bi-people-fill'></i>",
@@ -137,6 +135,12 @@ const bootcampData = {
             type: "Competencia",
             name: "Seguridad y Autenticación de Usuarios",
             start: 17,
+            end: 24,
+        },
+        {
+            type: "Competencia",
+            name: "DevOps: Automatización de procesos",
+            start: 18,
             end: 24,
         },
         {
