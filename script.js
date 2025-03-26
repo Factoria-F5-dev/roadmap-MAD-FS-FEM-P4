@@ -18,7 +18,7 @@ const bootcampData = {
         // },
         {
             type: "Proyecto",
-            name: " Web estática | <i class='bi bi-person-fill'></i>",
+            name: "Web estática | <i class='bi bi-person-fill'></i>",
             start: 1,
             end: 2,
         },
@@ -42,7 +42,7 @@ const bootcampData = {
         },
         {
             type: "Proyecto",
-            name: " Web dinámica | <i class='bi bi-people-fill'></i>",
+            name: "Web dinámica | <i class='bi bi-people-fill'></i>",
             start: 3,
             end: 5,
         },
@@ -73,13 +73,13 @@ const bootcampData = {
         },
         {
             type: "Competencia",
-            name: " Peticiones HTTP",
+            name: "Peticiones HTTP",
             start: 6,
             end: 24,
         },
         {
             type: "Proyecto",
-            name: " APP React | <i class='bi bi-people-fill'></i>",
+            name: "APP React | <i class='bi bi-people-fill'></i>",
             start: 8,
             end: 11,
         },
@@ -99,7 +99,7 @@ const bootcampData = {
 
         {
             type: "Proyecto",
-            name: " API Express | <i class='bi bi-people-fill'></i>",
+            name: "API Express | <i class='bi bi-people-fill'></i>",
             start: 12,
             end: 16,
         },
@@ -129,7 +129,7 @@ const bootcampData = {
         },
         {
             type: "Proyecto",
-            name: " Fullstack | <i class='bi bi-people-fill'></i>",
+            name: "Fullstack | <i class='bi bi-people-fill'></i>",
             start: 17,
             end: 19,
         },
