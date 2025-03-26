@@ -140,6 +140,12 @@ const bootcampData = {
             end: 24,
         },
         {
+            type: "Competencia",
+            name: "DevOps:Automatización de procesos",
+            start: 17,
+            end: 24,
+        },
+        {
             type: "Proyecto",
             name: "Proyecto final | <i class='bi bi-people-fill'></i>",
             start: 20,
