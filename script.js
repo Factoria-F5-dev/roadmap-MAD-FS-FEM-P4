@@ -1,7 +1,7 @@
 
 // Data
 const bootcampData = {
-    title: "Desarrollo web full stack",
+    title: "Desarrollo web full stack + intro a DevOps",
     weeks: 24,
     modules: [
         { name: "Intro + Front", start: 1, end: 10 },
