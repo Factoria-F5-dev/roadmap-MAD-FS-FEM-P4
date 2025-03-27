@@ -10,12 +10,6 @@ const bootcampData = {
         { name: "Proyecto final", start: 20, end: 24 },
     ],
     stack: [
-        // {
-        //     type: "Competencia",
-        //     name: "Gestionar equipos de forma eficiente",
-        //     start: 1,
-        //     end: 7,
-        // },
         {
             type: "Proyecto",
             name: "Web estática | <i class='bi bi-person-fill'></i>",
@@ -160,7 +154,7 @@ const bootcampData = {
     competencies: [
 
        {
-         name: "Prototipado web",
+        name: "Prototipado web",
         metric: ["Desarrollo del Diseño de producto"],
         indicator: {
             typeBasic: [
@@ -242,6 +236,20 @@ const bootcampData = {
                     "Uso de etiquetas",
                 ]
             },
+            themes: {
+                typeBasic: [
+                    "Git bash",
+                    "Github",
+                    "commits, ramas, merges, pull requests",
+                    "Resolución de conflictos",
+                    "Issues y proyectos",
+                ],
+                typeExtra: [
+                    "git flow",
+                    "conventional commits",
+                ]
+            }
+
         },
         {
             name: ["Bases de programación"],
@@ -255,7 +263,6 @@ const bootcampData = {
                     "Uso de la consola",
                     "Uso de Funciones",
                     "Uso del formato JSON",
-                   // "Manejo de errores (cláusula try/except)",
                     "Uso de POO (Programación Orientada a Objetos)",
                 
                 ],
@@ -486,22 +493,10 @@ const bootcampData = {
             }
 
         },
-        // 
-        // 
+
         {
             name: "DevOps: Automatización de procesos",
-            // indicator: {
-            //     typeBasic: [
-            //         "Uso de Docker",
-            //         "Uso de Docker Compose",
-            //         "Uso de Github Actions CI, CD",
-            //         "Uso de Integración de Docker con Github Actions",
-            //     ],
-            //     typeExtra: [
-            //         "Uso de Implementación de Kafka en microservicios con Docker y Kubernetes",
-            //         "Uso de Optimización de costos y gestión de recursos en la nube",
-            //     ]
-            // },
+
                 themes: {
                 typeBasic: [
                     "Introducción a docker (contenedores, imágenes, volúmenes, redes)",
@@ -513,55 +508,6 @@ const bootcampData = {
                 typeExtra: [
                     "Mensajería y eventos: RabbitMQ, Kafka",
                     "Observabilidad y monitorización",
-                ]
-            }
-        },
-        {
-            name: "Gestionar equipos de forma eficiente",
-            metric: ["Planificación y gestión del proyecto"],
-            indicator: {
-                typeBasic: [
-                    "Uso de roles Definidos",
-                    "Uso de kanban / burndown chart",
-                    "Uso de sprint backlog",
-                    "Uso de herramientas de gestión de proyectos (Trello, Jira, etc.)",
-                    "Uso de estimación de tareas",
-                    "Uso de Actas de reuniones",
-                    "Uso de Daily",
-                    "Uso de Retros",
-                    "Prioriza al equipo",
-                    "Uso de Historias de usuario",
-                    "Uso de Workflow diagram",
-                    "Uso de Documentación (README) o celdas MD en notebook",
-                ],
-                typeExtra: [
-                    "Integración de Gitflow con herramientas de gestión de proyectos (Jira y Trello)",
-                ]
-            },
-            themes: {
-                typeBasic: [
-                    "Metodología Scrum y kanban (roles y ceremonias)",
-                ],
-                typeExtra: [
-                    "Integración de Gitflow con herramientas de gestión de proyectos (Jira y Trello)",
-                    "Herramientas de gestión de proyectos (Trello & Jira), actas de reuniones e historias de usuario",
-                    "Documentación; archivos md (README), Workflow diagram, etc.",
-
-                ]
-            }
-        },
-        {
-            name: "Comunicar efectivamente el desarrollo de un proyecto de forma claras y estructurada",
-            indicator: {
-                typeBasic: [
-                    "Uso de Contenido Visual",
-                    "Uso de Estructura ordenada",
-                    "Uso de estructura Pragmática / Concreta",
-                    "Participación del equipo",
-                    "Uso de Storytelling",
-                ],
-                typeExtra: [
-                    "Uso de herramientas de diseño (Canva, Figma, etc.)",
                 ]
             }
         }
@@ -781,15 +727,18 @@ function generateAcordion() {
     bootcampData.competencies.forEach((competency, index) => {
         const collapseId = `collapse${index}`;
         const headingId = `heading${index}`;
-        const expanded = index === 0 ? 'true' : 'false';
-        const showClass = index === 0 ? 'show' : '';
+        const expanded = 'false'; // Siempre false para que funcione el data-bs-parent
+        const showClass = ''; // No agregar 'show' manualmente
+        // const expanded = index === 0 ? 'true' : 'false';
+        // const showClass = index === 0 ? 'show' : '';
+        const collapsedClass = 'collapsed'; 
 
         console.log(competency);
 
         const accordionItem = `
         <div class="accordion-item">
             <h2 class="accordion-header" id="${headingId}">
-                <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" 
+                <button class="accordion-button ${collapsedClass} "
                     type="button" data-bs-toggle="collapse" 
                     data-bs-target="#${collapseId}" 
                     aria-expanded="${expanded}" 
