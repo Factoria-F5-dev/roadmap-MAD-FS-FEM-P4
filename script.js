@@ -186,7 +186,7 @@ const bootcampData = {
             }
         },
         {
-            name: "Maquetación y Diseño web",
+            name: "Maquetación y estilo web",
             indicator: {
                 typeBasic: [
                     "Uso de HTML",
